@@ -1,0 +1,86 @@
+" Basic vim configuration for Docker development environments
+
+" General settings
+set nocompatible
+set backspace=indent,eol,start
+set history=1000
+set ruler
+set showcmd
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set number
+set nowrap
+set hidden
+set autoindent
+set smartindent
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set mouse=a
+set updatetime=300
+set scrolloff=5
+set wildmenu
+set wildmode=list:longest
+set encoding=utf-8
+set termencoding=utf-8
+set fileencodings=utf-8
+
+" Enable syntax highlighting
+syntax enable
+
+" Enable filetype detection
+filetype plugin indent on
+
+" Show whitespace
+set list
+set listchars=tab:>·,trail:·,extends:>,precedes:<,nbsp:+
+
+" Status line
+set laststatus=2
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%H:%M')}
+
+" Key mappings
+let mapleader=","
+
+" Easier moving of code blocks
+vnoremap < <gv
+vnoremap > >gv
+
+" Map jj to Escape in insert mode
+inoremap jj <Esc>
+
+" Easy window navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Save with Ctrl+S
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <Esc>:w<CR>
+
+" Quick exit
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>Q :q!<CR>
+
+" Quick save
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>wq :wq<CR>
+
+" Disable arrow keys to force good habits
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
+
+" Quick edit/reload vimrc
+nnoremap <Leader>ev :edit $MYVIMRC<CR>
+nnoremap <Leader>sv :source $MYVIMRC<CR>
+
+" Colors
+set t_Co=256
+set background=dark
+colorscheme desert

@@ -1,0 +1,89 @@
+[core]
+    editor = vim
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    excludesfile = ~/.gitignore
+    autocrlf = input
+
+[color]
+    ui = auto
+
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+
+[diff]
+    tool = vimdiff
+
+[difftool]
+    prompt = false
+
+[alias]
+    # Basic aliases
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    dc = diff --cached
+    lg = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ls = ls-files
+
+    # Show all branches
+    branches = branch -a
+
+    # Show all remotes
+    remotes = remote -v
+
+    # Show all tags
+    tags = tag -l
+
+    # Show what you've done today
+    today = log --since=midnight --author='$(git config user.name)' --oneline
+
+    # Amend the currently staged files to the latest commit
+    amend = commit --amend --reuse-message=HEAD
+
+    # Undo last commit but keep changes
+    uncommit = reset --soft HEAD^
+
+    # Reset and clean
+    nuke = !git reset --hard HEAD && git clean -fd
+
+    # Show the top contributors
+    top = shortlog -sn --no-merges
+
+    # Show a pretty log graph
+    graph = log --graph --oneline --decorate
+
+    # Stash aliases
+    stash-all = stash save --include-untracked
+    unstash = stash pop
+
+[push]
+    default = simple
+
+[pull]
+    rebase = false
+
+[init]
+    defaultBranch = main
+
+# Adapt this with your own information
+[user]
+    name = Huy Nguyen
+    email = huyn.nguyen95@gmail.com

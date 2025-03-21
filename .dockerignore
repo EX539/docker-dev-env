@@ -1,0 +1,44 @@
+# Version control
+.git
+.gitignore
+.gitmodules
+
+# Docker
+.dockerignore
+docker-compose.yml
+Dockerfile
+**/Dockerfile
+
+# Documentation
+README.md
+LICENSE
+*.md
+
+# Build artifacts
+**/build/
+**/dist/
+**/node_modules/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.Python
+**/env/
+**/venv/
+**/.env
+**/.venv
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+**/logs/
+**/*.log
+
+# OS specific files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,57 @@
+version: "3.8"
+
+services:
+  ubuntu:
+    build:
+      context: .
+      dockerfile: ./images/ubuntu/Dockerfile
+    volumes:
+      - ./:/workspace
+      - ./shared:/shared
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+
+  debian:
+    build:
+      context: .
+      dockerfile: ./images/debian/Dockerfile
+    volumes:
+      - ./:/workspace
+      - ./shared:/shared
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+
+  alpine:
+    build:
+      context: .
+      dockerfile: ./images/alpine/Dockerfile
+    volumes:
+      - ./:/workspace
+      - ./shared:/shared
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+
+  arch:
+    build:
+      context: .
+      dockerfile: ./images/arch/Dockerfile
+    volumes:
+      - ./:/workspace
+      - ./shared:/shared
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+
+  kali:
+    build:
+      context: .
+      dockerfile: ./images/kali/Dockerfile
+    volumes:
+      - ./:/workspace
+      - ./shared:/shared
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
